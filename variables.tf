@@ -73,6 +73,6 @@ variable "tfc_variable_set_name" {
 
 variable "project_prefix" {
   type        = string
-  default     = "tf-trust-project"
+  default     = "VMT"
   description = "Prefix for the project and trust relationship."
 }
