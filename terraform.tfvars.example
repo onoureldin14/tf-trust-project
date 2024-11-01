@@ -1,0 +1,3 @@
+tfc_organization_name = "MY_ORG"
+vault_url             = "MY_URL
+vault_token           = "MY_TOKEN"
