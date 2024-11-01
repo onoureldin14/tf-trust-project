@@ -1,4 +1,10 @@
 terraform {
+    backend "s3" {
+        bucket         = "terraform-state-7bqml8"
+        key            = "tf-trust-project/terraform.tfstate"
+        region         = "eu-west-2"
+        dynamodb_table = "terraform-app-state-lock"
+    }
   required_providers {
     tfe = {
       source  = "hashicorp/tfe"
@@ -17,6 +23,5 @@ terraform {
       version = "~> 3.5.1"
     }
   }
-
   required_version = "~> 1.2"
 }
