@@ -21,11 +21,6 @@ variable "tfc_trust_project_name" {
   description = "The name of the trust relationships project."
 }
 
-variable "tfc_trust_team_name" {
-  type        = string
-  default     = "Trust Relationships"
-  description = "The name of the trust relationships team."
-}
 
 variable "vault_url" {
   type        = string
